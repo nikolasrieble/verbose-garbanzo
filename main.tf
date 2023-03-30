@@ -22,5 +22,17 @@ module "module-1" {
   # insert required variables here
   password = "ZAQ!xsw2"
 }
-
-
+  
+module "curated-module" {
+  source  = "briancain/helloworld/aws"
+  version = "2020.4.21"
+  # insert required variables here
+  password = "ZAQ!xsw2"
+}
+  
+module "private-module" {
+  source  = "tfcdev-15922928.eu.ngrok.io/hashicorp/helloworld-2/aws"
+  version = "1.1.0"
+  # insert required variables here
+  password = "ZAQ!xsw2"
+}
