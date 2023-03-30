@@ -17,7 +17,8 @@ resource "null_resource" "dont_hack_me" {
 }
 
 module "module-1" {
-  source  = "app.terraform.io/miguels-awesome-org/helloworld/aws"
+  source  = "miguelhrocha/helloworld/aws"
+  version = "1.2.0"
   # insert required variables here
   password = "ZAQ!xsw2"
 }
