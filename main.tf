@@ -31,7 +31,7 @@ module "curated-module" {
 }
   
 module "private-module" {
-  source  = "app.staging.terraform.io/mh-hashistaging/helloworld-2/aws"
+  source  = "tfcdev-15922928.eu.ngrok.io/hashicorp/helloworld-2/aws"
   version = "1.1.0"
   # insert required variables here
   password = "ZAQ!xsw2"
