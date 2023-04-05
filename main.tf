@@ -29,10 +29,3 @@ module "curated-module" {
   # insert required variables here
   password = "ZAQ!xsw2"
 }
-  
-module "private-module" {
-  source  = "app.terraform.io/miguels-awesome-org/helloworld-2/aws"
-  version = "1.1.0"
-  # insert required variables here
-  password = "ZAQ!xsw2"
-}
