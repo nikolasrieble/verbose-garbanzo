@@ -70,16 +70,6 @@ variable "project_id" {
   type = string
 }
 
-variable "does not work" {
-  type = string
-  default = variable.project_id
-}
-
-variable "works" {
-  type = string
-  default = var.project_id
-}
-
 data "doormat_gcp_credentials" "creds" {
   provider = doormat
 
