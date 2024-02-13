@@ -42,5 +42,4 @@ module "cloud-storage_example_simple_bucket" {
   version = "5.0.0"
   name       = "nikolasrieble-test-bucket"
   project_id = var.project_id 
-  location   = "us-east1"
 }
