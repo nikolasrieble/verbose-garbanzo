@@ -37,8 +37,8 @@ provider "google" {
   project      = var.project_id
 }
 
-module "cloud-storage_example_simple_bucket" {
-  source  = "terraform-google-modules/cloud-storage/google//examples/simple_bucket"
-  version = "5.0.0"
-  project_id = var.project_id 
+resource "google_storage_bucket" "static-site" {
+  project = var.project_id
+  name          = "test-bucket"
+  location      = "EU"
 }
