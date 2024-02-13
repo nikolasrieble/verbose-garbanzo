@@ -40,7 +40,7 @@ provider "google" {
 module "cloud-storage_example_simple_bucket" {
   source  = "terraform-google-modules/cloud-storage/google//examples/simple_bucket"
   version = "5.0.0"
+  name       = "nikolasrieble-test-bucket"
   project_id = var.project_id 
   location   = "us-east1"
-  iam_members = []
 }
