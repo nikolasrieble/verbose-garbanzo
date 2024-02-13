@@ -37,7 +37,7 @@ provider "google" {
   project      = var.project_id
 }
 
-resource "google_storage_bucket" "test-bucket" {
+resource "google_storage_bucket" "nikolas-rieble-test-bucket" {
   project = var.project_id
   name          = "test-bucket"
   location      = "EU"
