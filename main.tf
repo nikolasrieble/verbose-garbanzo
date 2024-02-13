@@ -37,8 +37,9 @@ provider "google" {
   project      = var.project_id
 }
 
-resource "google_storage_bucket" "static-site" {
+resource "google_storage_bucket" "test-bucket" {
   project = var.project_id
   name          = "test-bucket"
   location      = "EU"
+  uniform_bucket_level_access = true
 }
