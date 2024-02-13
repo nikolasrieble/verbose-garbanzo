@@ -39,7 +39,7 @@ provider "google" {
 
 resource "google_storage_bucket" "nikolas-rieble-test-bucket" {
   project = var.project_id
-  name          = "test-bucket"
+  name          = "nikolas-rieble-test-bucket"
   location      = "EU"
   uniform_bucket_level_access = true
 }
